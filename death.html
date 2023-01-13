@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Over</title>
+    <style>
+        /* Add some basic styling for the body */
+        body {
+            background-color: black;
+            font-family: 'Press Start 2P';
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Add some CSS styles for the game over title */
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Add some CSS styles for the game over message */
+        p {
+            font-size: 25px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Add some CSS styles for the restart button */
+        button {
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Add some CSS styles for hover effect for the restart button*/
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<audio id="idAudio">
+    <source src="Frogger Coin Insert Tone.mp3" type="audio/ogg">
+</audio>
+<h1>Game Over</h1>
+<p>Alas, the computer has claimed victory this time!</p>
+<p>If you didn't finish reading, you will need to start again</p>
+<button id="restart-button">Insert another coin</button>
+
+</body>
+<script>
+    var GFG = document.getElementById("idAudio");
+    var restartButton = document.getElementById("restart-button");
+    restartButton.addEventListener("click", function() {
+        GFG.play();
+        setTimeout(() => { window.location.href = "second.html"; }, 1250);  // Redirect to game.html
+    });
+</script>
+</html>
