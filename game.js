@@ -393,7 +393,6 @@ Ship = function () {
   this.collidesWith = ["asteroid", "bigalien", "alienbullet"];
 
   this.preMove = function (delta) {
-    audio.play();
     if (KEY_STATUS.left) {
       this.vel.rot = -6;
     } else if (KEY_STATUS.right) {
