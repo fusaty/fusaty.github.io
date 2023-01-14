@@ -5,7 +5,6 @@
     <script src="vector_battle_regular.typeface.js"></script>
     <script src="ipad.js"></script>
     <script src="game.js"></script>
-
     <style>
       #canvas { border:1px white; top:0px; left:0px; }
       .button { position:absolute; border:1px solid black; }
@@ -19,18 +18,18 @@
         position: absolute;
         text-align: center;
         color: white;
-        animation: falling 15s infinite;
+        animation: falling 380s infinite;
         animation-play-state: running;
 
       }
       @keyframes falling {
-        from { top: -10%; } /* starting position */
+        from { top: -724%; } /* starting position */
         to { top: 100%; } /* end position */
       }
 
       .invert {
         background-color: white;
-        filter: invert(100%);
+         filter: invert(100%);
       }
       #right-side-div {
         float: right;
@@ -40,15 +39,92 @@
         float: left;
         width: 50%; /* Adjust the width as needed */
       }
+      audio {
+        display:none;
+      }
 
     </style>
   </head>
-  <body style="background-color:black;">
 
-    <div  id="left-side-div">
+  <body style="background-color:black;">
+  <div  id="left-side-div">
+
       <div class="falling-text"><ul>
+
+        <p>That's it, that's my resume. </p>
+        <p>Thank you for reading.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>In my free time, I enjoy watching good movies or series,</p>
+        <p>reading interesting books and working out at the fitness center.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>I have completed several academic works and certificates, such as my Bachelor thesis</p>
+        <p>on Exchange and sharing of information about security incidents, and a team project on</p>
+        <p>Teaching aid for CTF competitions. I also have a certificate from Google Garage in</p>
+        <p>Fundamentals of Digital Marketing.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>In addition to my work experience, I am currently in my last year of studies at the</p>
+        <p>Faculty of Electrical Engineering and Computer Science STU, where I am obtaining a</p>
+        <p>master's degree in applied informatics. Prior to this, I completed my studies at</p>
+        <p>Gymnázium Milana Rufusa, where I received my Maturita examination.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>At my last job, I was working as a Java web developer at Softec. I was involved in the</p>
+        <p>development of Java applications using technologies such as Spring boot,</p>
+        <p>Angular, AngularJS, and Java EE.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>I then had the opportunity to intern as a system application administrator at Tatra Banka A. S.</p>
+        <p>within the IT Academy. In this DevOps position, I was responsible for managing system applications,</p>
+        <p>monitoring computer networks using tools like Nagios, Grafana, and Dynatrace,</p>
+        <p>and analyzing data using Splunk. I also worked with both Linux and Windows servers.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>Next, I worked at Plastic Omnium Auto Exteriors,</p>
+        <p>where I was exposed to systems such as Centreon, Nagios, and Sourcetree.</p>
+        <p>I worked in both Linux and Windows operating systems, managing servers and</p>
+        <p>working with the cloud. Additionally, I was a member of the IT helpdesk, solving user problems.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>In my previous role as an administrative assistant in the IT department at K-System,</p>
+        <p>I was responsible for managing computer networks, editing web pages using HTML and CSS,</p>
+        <p>working with cloud technology such as VMware, and preparing new IT equipment.</p>
+        <p>Additionally, I assisted in the preparation of documentation for new employees.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>I am proficient in English and have a basic understanding of German.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>I have a driving license with categories AM, A1, B1, and B.</p>
+
+        <p>I am an ambitious and energetic individual who takes a mature and responsible approach to any task or situation</p>
+        <p>I encounter. I am comfortable working as part of a team and am always eager to continue learning and growing</p>
+        <p>as a professional in the tech industry.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>Let's begin...</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+        <p>The text will loop infinitelly, so you will have a chance reading it again</p>
+        <p>if you missed it before.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br></p>
+
         <p>The game is running</p>
+        <p>Use arrows and spacebar to play</p>
         <p>Try not to die --></p>
+        <p><br><br><br><br><br><br><br><br></p>
+
+
+        <p>Hello, my name is Michal Fusaty and this website basically works as my resume.</p>
+        <p>I tried to make reading it a bit interesting.</p>
+        <p>You need to play the game to read the whole resume. If you die, you will need to start again.</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+
+
+
       </ul>
       </div>
 

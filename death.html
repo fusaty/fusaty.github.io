@@ -2,7 +2,14 @@
 <html>
 <head>
     <title>Game Over</title>
+    <script>
+        var audio = new Audio('clubbed to death.mp3');
+        audio.loop = true;
+        //audio.play();
+        audio.volume = 0.1; // sets the volume to 50%
+    </script>
     <style>
+
         /* Add some basic styling for the body */
         body {
             background-color: black;
@@ -42,6 +49,12 @@
             background-color: black;
             color: white;
         }
+        .center {
+            display: block;
+            margin: auto;
+            width: 640px;
+            height: 480px;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +65,7 @@
 <p>Alas, the computer has claimed victory this time!</p>
 <p>If you didn't finish reading, you will need to start again</p>
 <button id="restart-button">Insert another coin</button>
-
+<img class="center" src="skull.gif" alt="skull">
 </body>
 <script>
     var GFG = document.getElementById("idAudio");

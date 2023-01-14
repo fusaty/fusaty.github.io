@@ -7,6 +7,10 @@ var laserMusic = new Audio('39459__THE_bizniss__laser.mp3');
 var explosionMusic = new Audio('51467__smcameron__missile_explosion.wav');
 var deathMusic = new Audio('arcade-retro-game-over-213.wav');
 
+var audio = new Audio('music.mp3');
+audio.loop = true;
+audio.volume = 0.3; // sets the volume to 50%
+
 KEY_CODES = {
   32: 'space',
   37: 'left',
@@ -389,6 +393,7 @@ Ship = function () {
   this.collidesWith = ["asteroid", "bigalien", "alienbullet"];
 
   this.preMove = function (delta) {
+    audio.play();
     if (KEY_STATUS.left) {
       this.vel.rot = -6;
     } else if (KEY_STATUS.right) {
@@ -1195,14 +1200,6 @@ $(function () {
     switch (KEY_CODES[e.keyCode]) {
       case 'f': // show framerate
         showFramerate = !showFramerate;
-        break;
-      case 'p': // pause
-        paused = !paused;
-        if (!paused) {
-          // start up again
-          lastFrame = Date.now();
-          mainLoop();
-        }
         break;
       case 'm': // mute
         SFX.muted = !SFX.muted;
