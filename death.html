@@ -19,6 +19,11 @@
             padding: 20px;
         }
 
+        a {
+      color: #fff;
+      text-decoration: none;
+    }
+
         /* Add some CSS styles for the game over title */
         h1 {
             font-size: 50px;
@@ -55,9 +60,16 @@
             width: 640px;
             height: 480px;
         }
+        
+        footer a:hover {
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+
     </style>
 </head>
 <body>
+    
 <audio id="idAudio">
     <source src="Frogger Coin Insert Tone.mp3" type="audio/ogg">
 </audio>
@@ -75,4 +87,9 @@
         setTimeout(() => { window.location.href = "letsplayagame.html"; }, 1250);  // Redirect to game.html
     });
 </script>
+
+<footer style="background-color: black; color: white; text-align: center; padding: 1em;">
+    <p><a href="https://isntthisalittlebitpersonal.github.io/" >Main page</a> - <a href="https://isntthisalittlebitpersonal.github.io/blog.html">Blog</a> - <a href="****">Links</a></p>
+  </footer>
+
 </html>
