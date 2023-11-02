@@ -1,0 +1,130 @@
+
+
+<div id="left-side" class="side">
+    <h2 class="title">
+        <p><a href="blog.html" class="link-1" >_blog</a> 
+        <p><a href="insertcoin.html" class="link-1">_curriculum-vitae</a></p> 
+        <p><a href="links.html" class="link-1" >_links</a></p>
+        <p style="font-family: Arial, sans-serif; font-size: 20px;">#### ### ######</p> 
+    </h2>
+</div>
+<style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+:root {
+  --dark: rgb(20, 20, 20);
+  --yellow: rgb(253, 216, 53);
+  --blue: rgb(98, 0, 234);
+  
+  --c1: #000;
+  --c2: rgb(218, 219, 216);
+  
+  --left-color: var(--c1);
+  --right-color: var(--c2);
+}
+
+body {  
+  background-color: var(--dark);
+  margin: 0px;
+}
+
+.link-1 {
+      color: #ebe1e1;
+      text-decoration: none;
+    }
+
+.link-2 {
+      color: #070707;
+      text-decoration: none;
+    }
+
+
+.link-1:hover {
+  color: #ccc;
+  border: 2px solid #faf8f8;
+}
+
+.link-2:hover {
+  color: #070707;
+  border: 2px solid #070707;
+}
+
+.side {
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.side .title {
+  margin: 0px 10vw;
+  width: 80vw;
+}
+
+.side .fancy {
+  line-height: 0.6em;
+}
+
+#left-side {
+  background-color: var(--left-color);
+  width: 60%;
+  z-index: 2;
+}
+
+#left-side .title {  
+  color: white;  
+}
+
+#left-side .fancy {
+  color: var(--right-color);
+}
+
+#right-side {
+  background-color: var(--right-color);
+}
+
+#right-side .title {
+  color: var(--dark);
+}
+
+#right-side .fancy {
+  color: white;
+}
+
+
+</style>
+
+<script>
+
+const left = document.getElementById("left-side");
+
+const handleMove = e => {
+  left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+}
+
+document.onmousemove = e => handleMove(e);
+
+document.ontouchmove = e => handleMove(e.touches[0]);
+
+function playAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+}
+
+  </script>
+
+ 
+  <div id="right-side" class="side">
+    <h2 class="title">
+        <p><a href="blog.html" class="link-2" onmouseover="playAudio()" >_blog</a> 
+        <p><a href="insertcoin.html" class="link-2" onmouseover="playAudio()">_curriculum-vitae </a></p> 
+        <p><a href="links.html" class="link-2" onmouseover="playAudio()">_links</a></p>        
+        <p style="font-family: Arial, sans-serif; font-size: 20px;">Hack the world!</p>
+        <audio id="myAudio" src="terazništ.mp3" style="display: none;"></audio>  
+    </h2>
+
+  </div>
