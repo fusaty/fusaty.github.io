@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Game Over</title>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+    <link rel="shortcut icon" type="image/jpg" href="/pictures/favicon.jpg"/>
     <script>
-        var audio = new Audio('clubbed to death.mp3');
+        var audio = new Audio('/sounds/clubbed to death.mp3');
         audio.loop = true;
         //audio.play();
         audio.volume = 0.1; // sets the volume to 50%
@@ -72,13 +72,13 @@
 <body>
     
 <audio id="idAudio">
-    <source src="Frogger Coin Insert Tone.mp3" type="audio/ogg">
+    <source src="/sounds/Frogger Coin Insert Tone.mp3" type="audio/ogg">
 </audio>
 <h1>Game Over</h1>
 <p>Alas, the computer has claimed victory this time!</p>
 <p>If you didn't finish reading, you will need to start again</p>
 <button id="restart-button">Insert another coin</button>
-<img class="center" src="skull.gif" alt="skull">
+<img class="center" src="/pictures/skull.gif" alt="skull">
 </body>
 <script>
     var GFG = document.getElementById("idAudio");
