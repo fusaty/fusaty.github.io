@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+  <link rel="shortcut icon" type="image/jpg" href="/pictures/favicon.jpg"/>
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      color: #fff;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em;
+      background-color: #000000;
+      border-bottom: 1px solid #333;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    form {
+      background-color: #000000;
+      border: 1px solid #fff;
+      padding: 2em;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+    }
+
+    input[type="email"], textarea {
+      width: 94.5%;
+      padding: 1em;
+      margin-top: 0.5em;
+      background-color: #151515;
+      border: 1px solid #ffffff;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #000000;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #151515;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+
+    footer a:hover {
+        color: #ccc;
+        border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Get in touch</h1>
+    <p>Not sure why you would, but you can fill the form below to contact me.</p>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/mdknrnyp" method="POST">
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" required>
+      <p></p>
+      <label for="message">Your message:</label>
+      <p></p>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <p></p>
+      <center><button type="submit">Send</button></center>
+    </form>
+  </main>
+
+  <footer style="background-color: black; color: white; text-align: center; padding: 1em;">
+    <p><a href="/index.html">Main page</a> - <a href="/blog/posts.html">Blog</a> - <a href="/insertcoin.html">Curriculum vitae</a> - <a href="/links.html">Links</a> - <a href="/contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
