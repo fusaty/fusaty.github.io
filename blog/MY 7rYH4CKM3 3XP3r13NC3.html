@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <html>
+  <script src='https://code.jquery.com/jquery-1.8.2.js'></script>
+<script>
+
+$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup-onload').show();
+$('.close').click(function(){
+$('.popup-onload').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+
+</script>
 <head>
   <title>My Blog - MY 7rYH4CKM3 3XP3r13NC3</title>
   <link rel="shortcut icon" type="image/jpg" href="/pictures/favicon.jpg"/>
@@ -55,9 +77,97 @@
   border: 1px solid #ccc;
 }
 
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup-onload{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: 600px;
+width: 600px;
+min-height: 150px;
+margin: 100px auto;
+background: #ffffff;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #3c3c3c;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+
+.close {
+color: black;
+text-align: center;
+}
+
   </style>
 </head>
 <body>
+  <div class='popup-onload'>
+    <div class='cnt223'>        
+    <p>
+        Hello there! 😊 </p>
+
+        <p>I am Prince Williams of Nigeria, and I am pleasured to inform yourself that you are the 100th visitor of this website! 🎉 As a token of my apreciation, I am giving you a milion dollar! 💰</p>
+        
+        <p>All you need to do is fill out the form below with your personal information, and the money will be transferred to your bank account witin 24 hours. 💸</p>
+        
+        <p>Please note that this is a limited time ofer, so act fastest! ⏰</p>
+        
+        <p>I hop you enjoy your winning! 😊</p>
+        
+        <p>Best regard,</p>
+        
+        <p>Prince Wilson of Nigeria 🇳🇬</p>
+
+        <textarea id="my-writable-box" rows="4" cols="50" placeholder="All your personal information here pls..."></textarea>
+    <br/>
+    <br/>
+    <a href='' class='close'>Close</a>
+    </p>
+    </div>
+    </div>
   <header>
     <h1><a href="posts.html">My Blog</a></h1>
   </header>
